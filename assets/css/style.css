@@ -1,0 +1,66 @@
+body {
+  margin: 0 auto;
+  background-color: #fafafa;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  margin: 150px auto;
+  max-width: 500px;
+}
+
+table {
+  width: 100%
+}
+
+.table-crud {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.add-tree {
+  display: none;
+}
+
+.edit-tree {
+  display: none;
+}
+
+.remove-tree {
+  display: none;
+}
+
+.submit-button {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  margin: 3px;
+}
+
+ul.checktree li:before {
+  height: 1em;
+  width: 12px;
+  border-bottom: 1px dashed;
+  content: "";
+  display: inline-block;
+  top: -0.3em;
+}
+
+ul.checktree li {
+  border-left: 1px dashed;
+}
+
+ul.checktree li:last-child:before {
+  border-left: 1px dashed;
+}
+
+ul.checktree li:last-child {
+  border-left: none;
+}
