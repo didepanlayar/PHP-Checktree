@@ -20,32 +20,6 @@ $(document).ready(function() {
         });
     });
 
-    // Call check parent status
-    checkParentStatus();
-
-    // Check cild status change
-    $('.checktree :checkbox').change(function() {
-        checkParentStatus();
-    });
-
-    // Check parent status
-    function checkParentStatus() {
-        $('.checktree ul').each(function() {
-            var parentCheckbox = $(this).closest('li').children(':checkbox');
-            var childCheckboxes = $(this).find(':checkbox');
-            var allChecked = true;
-
-            childCheckboxes.each(function() {
-                if (!$(this).is(':checked')) {
-                    allChecked = false;
-                    return false;
-                }
-            });
-
-            parentCheckbox.prop('checked', allChecked);
-        });
-    }
-
     // CRUD Click Button
     var addTreeDiv = document.querySelector('.add-tree');
     var editTreeDiv = document.querySelector('.edit-tree');
